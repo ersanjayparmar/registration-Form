@@ -1,0 +1,38 @@
+import React, { Component } from 'react'; 
+import { ScrollView, Text,TextInput,Button ,View,TouchableOpacity} from 'react-native'; 
+ 
+export default class myApp extends Component { 
+  
+  render() { 
+    return ( 
+      <ScrollView >
+  <View style={{backgroundColor:'#e6ffff',height:'1000',TextAlign:'Center'}}>
+
+
+      <Text style={{textAlign:"center",marginTop:10,padding:10,
+fontSize:16,backgroundColor:"#006666",borderRadius:20}}>"REGISTRATION FORM"</Text> 
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="Enter your name"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="dob(dd/Mm/YYYY)"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="Gender"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="Mobile Number"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="Address"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="LoginID"></TextInput>
+
+<TextInput style={{borderRadius:10,borderWidth:2,margin:10,padding:8}} placeHolder="PASSWORD"></TextInput>
+
+<Button title='submit'></Button>
+
+<TouchableOpacity style={{backgroundColor:"yellow",marginTop:10,padding:6,marginLeft:130,borderRadius:30,textAlign:'center'}}>
+<Text>LOGIN</Text>
+</TouchableOpacity>
+</View>		 
+      </ScrollView> 
+    ); 
+  } 
+}
